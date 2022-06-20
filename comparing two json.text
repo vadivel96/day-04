@@ -1,0 +1,8 @@
+How to compare two JSON have the same properties without order?
+var obj1 = { name: "Person 1", age:5 };
+var obj2 = { age:5, name: "Person 1" };
+
+ans: 
+       Better to use Lodash isEqual, it will return true as along as the key-value pair exists.
+       It doesnt not concern with order as json.stringify does.
+
